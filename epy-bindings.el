@@ -16,6 +16,8 @@
 (add-hook 'python-mode-hook
 	  (lambda ()
 	    (define-key python-mode-map "\C-ci" 'rope-auto-import)
+	    (define-key python-mode-map "\C-xev" 'rope-extract-variable)
+	    (define-key python-mode-map "\C-xem" 'rope-extract-method)
 	    (define-key python-mode-map "\C-c\C-d" 'rope-show-calltip)
 	    )
 )
