@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="README"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-12-01 00:03:27 CST"/>
+<meta name="author" content="Matthew Morrison"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">README</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Welcome to the best collection of emacs extensions ever</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Features</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1 Python Related</a></li>
+<li><a href="#sec-1-1-2">1.1.2 Editing Packages</a></li>
+<li><a href="#sec-1-1-3">1.1.3 Configurations</a></li>
+<li><a href="#sec-1-1-4">1.1.4 Keybindings</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2 Installation</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1 Configuring the <span style="text-decoration:underline;">flymake</span> checker</a></li>
+<li><a href="#sec-1-2-2">1.2.2 Adding the django snippets</a></li>
+<li><a href="#sec-1-2-3">1.2.3 ipython integration</a></li>
+<li><a href="#sec-1-2-4">1.2.4 line highlighting</a></li>
+<li><a href="#sec-1-2-5">1.2.5 Highlight Indentation</a></li>
+<li><a href="#sec-1-2-6">1.2.6 disabling the auto-pairing of parenthesis</a></li>
+<li><a href="#sec-1-2-7">1.2.7 Nosetests keybindings</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3 Installation with emacs-starter-kit</a></li>
+<li><a href="#sec-1-4">1.4 License</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Welcome to the best collection of emacs extensions ever</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>I'm collecting and customizing the perfect environment for python
+developement, using the most beautiful emacs customization to obtain a
+really modern and exciting (yet stable) way to edit text files.
+</p>
+<p>
+In the package are included also a lot of other packages and
+configurations, it's an upstart for clean emacs installations, these
+configuration however are very similar to emacs-starter-kit and I
+suggest you to give it a try, emacs-for-python is designed to work
+with it (instruction below).
+</p>
+<p>
+To get in contact or ask for help you have many possibilities:
+</p>
+<p>
+github issue tracker: <a href="https://github.com/gabrielelanaro/emacs-for-python/issues">https://github.com/gabrielelanaro/emacs-for-python/issues</a>
+</p>
+<p>
+google+ page: <a href="https://plus.google.com/u/0/b/108723367526390492977/">https://plus.google.com/u/0/b/108723367526390492977/</a>
+</p>
+<p>
+email me: <a href="mailto:gabriele.lanaro@gmail.com">mailto:gabriele.lanaro@gmail.com</a>
+</p>
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Features</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>The package is splitted in various files, in this way it's very easy
+to include what you really need.
+</p>
+
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Python Related</h4>
+<div class="outline-text-4" id="text-1-1-1">
+
+
+<ul>
+<li>Ropemacs (Custom) : A refactoring library
+</li>
+<li>Auto Completion with rope (Custom) : Tested to work well with Rope
+</li>
+<li>Flymake + pyflakes (Custom): Highlight errors on the fly, improved
+      from the standard version
+</li>
+<li>Virtualenv : Original, In-development tool for using virtualenv in
+      emacs.
+</li>
+<li>Custom Yasnippet Snippets
+</li>
+<li>Cython Mode: a mode for highlighting cython files
+</li>
+<li>latest python.el (fgallina/python.el)
+</li>
+<li>nosetests integration (nose.el)
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> Editing Packages</h4>
+<div class="outline-text-4" id="text-1-1-2">
+
+
+<ul>
+<li>Open Next Line: C-o will open a line under the cursor (very
+      similar to vim o)
+</li>
+<li>Auto Completion: Wonderful package for auto complete anything in
+      emacs
+</li>
+<li>Yasnippet: Snippets on steroids
+</li>
+<li>Parentheses pairing (Custom): Bug-free parentheses pairing using
+      skeletons.
+</li>
+<li>smart-operator: Automatically adds spaces around arithmetic operators.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> Configurations</h4>
+<div class="outline-text-4" id="text-1-1-3">
+
+
+<ul>
+<li>ido activation
+</li>
+<li>ibuffer instead of buffer menu
+</li>
+<li>eshell configuration
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-4" class="outline-4">
+<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> Keybindings</h4>
+<div class="outline-text-4" id="text-1-1-4">
+
+
+<ul>
+<li>Copy-Cut-Paste from clipboard with Super-C Super-X Super-V    
+</li>
+<li>Calc Mode remapping to M-c
+</li>
+<li>M-Tab remapped to C-Tab to avoid collisions with the desktop
+      manager
+</li>
+<li>nose keybindings
+</li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Installation</h3>
+<div class="outline-text-3" id="text-1-2">
+
+
+<p>
+Put the emacs-for-python directory in .emacs.d directory (or any
+other), the add this line in your .emacs, it will enable all the
+features of emacs-for-python package (editing configuration,
+keybindings, python stuff etc&hellip;)
+</p>
+<pre class="example">
+(load-file "/path/to/emacs-for-python/epy-init.el")
+</pre>
+
+
+<p>
+You may want to enable only some of the features provided by
+emacs-for-python, in this case just enable some of them:
+</p>
+<pre class="example">
+(add-to-list 'load-path "path/to/emacs-for-python/") ;; tell where to load the various files
+(require 'epy-setup)      ;; It will setup other loads, it is required!
+(require 'epy-python)     ;; If you want the python facilities [optional]
+(require 'epy-completion) ;; If you want the autocompletion settings [optional]
+(require 'epy-editing)    ;; For configurations related to editing [optional]
+(require 'epy-bindings)   ;; For my suggested keybindings [optional]
+(require 'epy-nose)       ;; For nose integration
+</pre>
+
+
+<p>
+For further information and usage suggestions check:
+</p>
+<ul>
+<li><a href="https://github.com/gabrielelanaro/emacs-for-python/wiki">https://github.com/gabrielelanaro/emacs-for-python/wiki</a>
+</li>
+<li><a href="http://wiki.github.com/gabrielelanaro/emacs-for-python/workflow">http://wiki.github.com/gabrielelanaro/emacs-for-python/workflow</a>
+</li>
+</ul>
+
+
+<p>
+There is another nice tutorial on how to install emacs-for-python
+here:
+<a href="http://maddemcode.com/python/emacs-and-python-the-definitive-answer/">http://maddemcode.com/python/emacs-and-python-the-definitive-answer/</a> 
+</p>
+
+</div>
+
+<div id="outline-container-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Configuring the <span style="text-decoration:underline;">flymake</span> checker</h4>
+<div class="outline-text-4" id="text-1-2-1">
+
+<p>New in version 0.3:
+I changed the way you configure your checkers, now there is no
+predefined checker and you have to configure it by your own.
+</p>
+<p>
+The good news is that it is extremely simple to configure your own
+command, for example to configure the pyflakes checker install it and
+put in your customization file (.emacs):
+</p>
+<pre class="example">
+(epy-setup-checker "pyflakes %f")
+</pre>
+
+
+<p>
+Obviously you can substitute the ``"pyflakes %f"`` with wathever you
+want, you just have to keep in mind that ``%f`` will be substituted
+with the file which is being checked.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Adding the django snippets</h4>
+<div class="outline-text-4" id="text-1-2-2">
+
+<p>The django snippets comes as an option, you can load them using:
+</p>
+<pre class="example">
+(epy-django-snippets)
+</pre>
+
+
+<p>
+As a command using M-x or putting it in your .emacs.
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> ipython integration</h4>
+<div class="outline-text-4" id="text-1-2-3">
+
+<p>Ipython can be integrated with python-mode. Clicking on the
+Python-&gt;Start interpreter menu entry will spawn an ipython shell
+instead of a python one. To enable the feature put this line in your .emacs:
+</p>
+<pre class="example">
+(epy-setup-ipython)
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2-4" class="outline-4">
+<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> line highlighting</h4>
+<div class="outline-text-4" id="text-1-2-4">
+
+<p>You may wanto to enable this feature with the color you prefer, to do
+so, drop one of the following lines in your .emacs
+</p><pre class="example">
+(global-hl-line-mode t) ;; To enable
+(set-face-background 'hl-line "black") ;; change with the color that you like
+                                       ;; for a list of colors: http://raebear.net/comp/emacscolors.html
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2-5" class="outline-4">
+<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> Highlight Indentation</h4>
+<div class="outline-text-4" id="text-1-2-5">
+
+<p>Interesting way to have a visual clue on how the code is indented:
+</p>
+<p>
+<img src="https://github.com/gabrielelanaro/emacs-for-python/raw/master/doc/highlight_line_ind.png"  alt="https://github.com/gabrielelanaro/emacs-for-python/raw/master/doc/highlight_line_ind.png" />
+</p>
+<pre class="example">
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2-6" class="outline-4">
+<h4 id="sec-1-2-6"><span class="section-number-4">1.2.6</span> disabling the auto-pairing of parenthesis</h4>
+<div class="outline-text-4" id="text-1-2-6">
+
+<p>To disable the auto-pairing, drop the following line:
+</p><pre class="example">
+(setq skeleton-pair nil) 
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2-7" class="outline-4">
+<h4 id="sec-1-2-7"><span class="section-number-4">1.2.7</span> Nosetests keybindings</h4>
+<div class="outline-text-4" id="text-1-2-7">
+
+<p>First of all, install nosetests. Then open a python file in your project and:
+``C-c a``: run all test
+``C-c m``: run tests in the module
+``C-c .``: run test under cursor
+</p>
+<p>
+``C-c p a``, ``C-c p m``, ``C-c p .``: same as above but drop in pdb when there's an error (Very useful!)
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Installation with emacs-starter-kit</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>I've built up a little fork of emacs starter kit that is greatly
+integrated with emacs-for-python, it seems the best solution to me!
+</p>
+<p>
+The repo is at this address: <a href="http://github.com/gabrielelanaro/emacs-starter-kit">http://github.com/gabrielelanaro/emacs-starter-kit</a>
+</p>
+<p>
+Remember that customization to emacs-starter-kit are done to a
+custom.el file, and so you can substitute your distribution of
+emacs-starter-kit and you have to copy just your customization file.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> License</h3>
+<div class="outline-text-3" id="text-1-4">
+
+
+<p>
+This is mostly a distribution with some little tweaks, with respect of
+the licenses, my tweaks are distributed according to the term of the
+GNU GPL license, described in the file COPYING.
+</p>
+<p>
+Generally each file has its own license and copyright notice (most, if
+not all of packages are GPL), the license of rope (GPL) is in
+rope-dist/COPYING.
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2012-12-01 00:03:27 CST</p>
+<p class="author">Author: Matthew Morrison</p>
+<p class="creator">Org version 7.8.11 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
